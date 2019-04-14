@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    
+}
+
+group 'ru.timofeeva'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'junit:junit:4.13-beta-2'
+    compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    testCompile 'junit:junit:4.13-beta-2'
+   
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
